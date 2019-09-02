@@ -3,6 +3,7 @@
 
 .background {
   min-height: 100vh;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +43,6 @@
 .h1sub {
   @include font(text);
   font-size: 16px;
-  font-weight: normal;
   margin-top: 13px;
 }
 
@@ -90,6 +90,7 @@
 
 .button {
   @include font(title);
+  font-weight: 600;
   color: $white;
   background: $secondary;
   border: none;

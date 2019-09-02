@@ -1,12 +1,14 @@
 import React from 'react'
 
-import Container from '../components/Container'
+import Container from './Container'
+import Navbar from './Navbar'
 
 import classes from './Hero.styles.scss'
 
 function Hero() {
   return (
     <section className={classes.background}>
+      <Navbar />
       <Container>
         <div className={classes.container}>
           <div className={classes.left}>
