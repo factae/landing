@@ -2,7 +2,7 @@ import React from 'react'
 import App, {Container} from 'next/app'
 import ReactGA from 'react-ga'
 
-import classes from './_styles.scss'
+import './_styles.scss'
 
 class MyApp extends App {
   static async getInitialProps({Component, ctx}) {
@@ -25,9 +25,7 @@ class MyApp extends App {
 
     return (
       <Container>
-        <div className={classes.container}>
-          <Component {...pageProps} />
-        </div>
+        <Component {...pageProps} />
       </Container>
     )
   }

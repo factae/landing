@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react'
 import Document, {Html, Head, Main, NextScript} from 'next/document'
 
-import avatar from '../images/clement-douin.jpeg?size=1024'
+import avatar from '../images/factae.png?size=1024'
 
 // From https://github.com/zeit/next.js/blob/b4e4bcda9b6c3c3f43bd1dadef061d3b6ee0cc4d/packages/next/pages/_document.tsx#L132-L154
 class MyHead extends Head {
@@ -48,19 +48,8 @@ class MyDocument extends Document {
     return (
       <Html lang="fr">
         <MyHead>
-          <link
-            rel="preload"
-            href="/static/fonts/Quicksand-Regular.woff2"
-            as="font"
-            crossOrigin="true"
-          />
-          <link
-            rel="preload"
-            href="/static/fonts/SpaceMono-Regular.woff2"
-            as="font"
-            crossOrigin="true"
-          />
-
+          <link rel="preload" href="/static/fonts/Heebo.woff2" as="font" crossOrigin="true" />
+          <link rel="preload" href="/static/fonts/Poppins.woff2" as="font" crossOrigin="true" />
           <meta charSet="UTF-8" />
           <meta name="author" content="Clément DOUIN" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />

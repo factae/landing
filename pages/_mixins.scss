@@ -1,9 +1,12 @@
 @mixin font($name) {
   font-variant-ligatures: none;
-  @if $name == 'quicksand' {
-    font-family: 'Quicksand', Helvetica, Arial, sans-serif !important;
-  } @else if $name == 'space mono' {
-    font-family: 'Space Mono', 'Courier New', Courier, monospace !important;
+
+  @if $name == 'title' {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  } @else if $name == 'text' {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300;
   } @else {
     @error "Unknown font #{$name}."
   }

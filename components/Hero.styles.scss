@@ -1,0 +1,103 @@
+@import '../pages/variables';
+@import '../pages/mixins';
+
+.background {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(md) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.left {
+  flex: 1;
+  width: 100%;
+  padding-right: 80px;
+}
+
+.right {
+  flex: 1;
+  width: 100%;
+}
+
+.h1 {
+  @include font(title);
+  display: flex;
+  flex-direction: column;
+  font-size: 36px;
+  margin: 0 0 47px;
+}
+
+.h1sub {
+  @include font(text);
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 13px;
+}
+
+.h2 {
+  @include font(title);
+  display: flex;
+  font-size: 80px;
+  justify-content: flex-start;
+  margin: 0;
+  height: 100px;
+}
+
+.h2slash {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.h2slash {
+  font-size: 16px;
+  font-weight: normal;
+  padding-top: 28px;
+  margin: 0 8px;
+}
+
+.h2unit {
+  padding-top: 21px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.h2sub {
+  font-size: 19px;
+  margin-bottom: 40px;
+}
+
+.input {
+  border: none;
+  padding: 28px 23px;
+  border-radius: 3px 0 0 3px;
+  font-size: 16px;
+  width: 100%;
+  height: 72px;
+  max-width: 300px;
+}
+
+.button {
+  @include font(title);
+  color: $white;
+  background: $secondary;
+  border: none;
+  height: 72px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  padding: 28px 40px;
+  border-radius: 0 10px 10px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
