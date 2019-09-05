@@ -1,5 +1,7 @@
 import React from 'react'
 
+import background from '../images/hero-background.png'
+import screenshot from '../images/hero-screenshot.jpeg'
 import Container from './Container'
 import Navbar from './Navbar'
 
@@ -7,7 +9,7 @@ import classes from './Hero.styles.scss'
 
 function Hero() {
   return (
-    <section className={classes.background}>
+    <section className={classes.background} style={{backgroundImage: `url(${background})`}}>
       <Navbar />
       <Container>
         <div className={classes.container}>
@@ -30,7 +32,7 @@ function Hero() {
               <span className={classes.h2unit}>mois</span>
             </h2>
             <div className={classes.h2sub}>Gratuit pendant 1 an</div>
-            <img src="#" alt="" />
+            <img className={classes.screenshot} src={screenshot} alt="" />
           </div>
         </div>
       </Container>

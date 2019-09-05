@@ -7,6 +7,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-blend-mode: saturation;
 }
 
 .container {
@@ -101,4 +104,11 @@
   border-radius: 0 10px 10px 0;
   font-size: 12px;
   text-transform: uppercase;
+}
+
+.screenshot {
+  width: 100%;
+  border-radius: 10px;
+  border: 10px solid black;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
