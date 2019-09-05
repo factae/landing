@@ -16,10 +16,10 @@ function Navbar() {
           </div>
           <div className={classes.right}>
             <Link className={classes.link} to="/#">
-              C'est qui ?
+              À propos
             </Link>
             <Link className={classes.link} to="/#">
-              Comment ça marche ?
+              Fonctionnalités
             </Link>
             <Link className={classes.link} to="/#">
               Blog
