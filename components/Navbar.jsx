@@ -8,29 +8,27 @@ import classes from './Navbar.styles.scss'
 
 function Navbar() {
   return (
-    <div className={classes.container}>
-      <Container>
-        <nav className={classes.nav}>
-          <div className={classes.left}>
+    <Container className={classes.container}>
+      <nav className={classes.nav}>
+        <span className={classes.logo}>
+          <Link to="/">
             <Logo />
-          </div>
-          <div className={classes.right}>
-            <Link className={classes.link} to="/#">
-              À propos
-            </Link>
-            <Link className={classes.link} to="/#">
-              Fonctionnalités
-            </Link>
-            <Link className={classes.link} to="/#">
-              Blog
-            </Link>
-            <Link className={classes.button} to="/#">
-              Créer un compte
-            </Link>
-          </div>
-        </nav>
-      </Container>
-    </div>
+          </Link>
+        </span>
+        <Link className={classes.link} to="/#">
+          À propos
+        </Link>
+        <Link className={classes.link} to="/#">
+          Fonctionnalités
+        </Link>
+        <Link className={classes.link} to="/#">
+          Blog
+        </Link>
+        <Link className={classes.button} to="/#">
+          Créer un compte
+        </Link>
+      </nav>
+    </Container>
   )
 }
 

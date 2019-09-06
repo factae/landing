@@ -30,29 +30,27 @@ function Hero() {
       style={{backgroundImage: `url(${background})`}}
     >
       <Navbar />
-      <Container>
-        <div className={classes.container}>
-          <h1 className={classes.h1}>
-            <span>Un outil de facturation ...</span>
-            <span className={classes.h1sub}>... au prix d'une baguette !?</span>
-          </h1>
-          <div className={classes.form}>
-            <input className={classes.input} type="text" placeholder="Email" />
-            <button className={classes.button}>Essayer</button>
-          </div>
-          <h2 className={classes.h2}>
-            <span className={classes.h2amount}>1€</span>
-            <span className={classes.h2slash}>/</span>
-            <span className={classes.h2unit}>mois</span>
-            <div className={classes.h2sub}>Gratuit la première année</div>
-          </h2>
-          <animated.img
-            className={classes.screenshot}
-            src={screenshot}
-            alt="Capture d'écran de factAE"
-            style={{transform: spring.xy.interpolate(transform)}}
-          />
+      <Container className={classes.container}>
+        <h1 className={classes.h1}>
+          <span>Un outil de facturation ...</span>
+          <span className={classes.h1sub}>... au prix d'une baguette !?</span>
+        </h1>
+        <div className={classes.form}>
+          <input className={classes.input} type="text" placeholder="Email" />
+          <button className={classes.button}>Essayer</button>
         </div>
+        <h2 className={classes.h2}>
+          <span className={classes.h2amount}>1€</span>
+          <span className={classes.h2slash}>/</span>
+          <span className={classes.h2unit}>mois</span>
+          <div className={classes.h2sub}>Gratuit la première année</div>
+        </h2>
+        <animated.img
+          className={classes.screenshot}
+          src={screenshot}
+          alt="Capture d'écran de factAE"
+          style={{transform: spring.xy.interpolate(transform)}}
+        />
       </Container>
     </section>
   )
