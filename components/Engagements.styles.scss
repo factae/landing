@@ -1,0 +1,113 @@
+@import '../pages/variables';
+@import '../pages/mixins';
+
+.container {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: min-content 1fr;
+  grid-auto-flow: row;
+  grid-gap: 50px;
+
+  @include for-size(tablet-landscape-down) {
+    grid-template-rows: min-content repeat(3, 1fr);
+    grid-auto-flow: column;
+    grid-gap: 25px;
+  }
+
+  @include for-size(tablet-portrait-down) {
+    grid-gap: 15px;
+  }
+}
+
+.title {
+  @include font(title);
+  font-size: 36px;
+  grid-row: 1;
+  grid-column: 1 / span 3;
+  justify-self: center;
+  margin: 10px 0;
+
+  @include for-size(tablet-landscape-down) {
+    font-size: 26px;
+  }
+}
+
+.engagement {
+  border-radius: 15px;
+  grid-row: 2;
+  cursor: default;
+  justify-self: center;
+  padding: 60px 30px;
+  transition-duration: 250ms;
+  transition-property: box-shadow, transform;
+  text-align: center;
+
+  svg {
+    [data-fill] {
+      fill: $primary;
+      transition: fill 250ms;
+    }
+
+    [data-stroke] {
+      stroke: $primary;
+      transition: stroke 250ms;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 62px 94px 0 #C1C7D0;
+    transform: scale(1.1);
+
+    .engagementDesc {
+      opacity: 1;
+    }
+
+    svg {
+      [data-fill] {
+        fill: $secondary;
+      }
+
+      [data-stroke] {
+        stroke: $secondary;
+      }
+    }
+  }
+
+  @include for-size(tablet-landscape-down) {
+    margin: 0 50px;
+    grid-row: auto;
+    grid-column: 1 / span 3;
+    padding: 30px;
+
+    .engagementDesc {
+      opacity: 1;
+    }
+  }
+
+  @include for-size(tablet-portrait-down) {
+    margin: 0 15px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+}
+
+.engagementTitle {
+  @include font(text);
+  font-weight: 700;
+  font-size: 25px;
+  margin: 30px 0 15px 0;
+
+  @include for-size(tablet-landscape-down) {
+    margin: 15px 0;
+    font-size: 18px;
+  }
+}
+
+.engagementDesc {
+  @include font(text);
+  opacity: 0;
+  font-size: 16px;
+  color: $placeholder;
+  transition: opacity 250ms;
+}
