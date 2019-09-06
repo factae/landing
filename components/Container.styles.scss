@@ -8,7 +8,7 @@
   padding-right: 1rem;
   padding-left: 1rem;
 
-  @include media(md) {
+  @include for-size(desktop-down) {
     max-width: 64rem;
   }
 }

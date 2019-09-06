@@ -20,16 +20,17 @@
   }
 }
 
-@mixin media($size) {
-  @if $size == sm {
-    @media (max-width: 575px) {
-      @content;
-    }
-  }
+@mixin for-size($size) {
+  $phone-upper-boundary: 600px;
+  $tablet-portrait-upper-boundary: 900px;
+  $tablet-landscape-upper-boundary: 1200px;
+  $desktop-upper-boundary: 1800px;
 
-  @if $size == md {
-    @media (max-width: 1199px) {
-      @content;
-    }
+  @if $size == tablet-portrait-down {
+    @media (max-width: $phone-upper-boundary) {@content;}
+  } @else if $size == tablet-landscape-down {
+    @media (max-width: $tablet-portrait-upper-boundary) {@content;}
+  } @else if $size == desktop-down {
+    @media (max-width: $tablet-landscape-upper-boundary) {@content;}
   }
 }
