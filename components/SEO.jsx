@@ -11,7 +11,7 @@ function SEO({title, desc, tags, url}) {
       <meta property="og:type" content="article" />
       <meta property="og:url" content={process.env.HOSTNAME + url} />
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:site" content="@soywod" />
+      <meta name="twitter:site" content="@factaeOfficial" />
       <meta name="twitter:creator" content="@soywod" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={desc} />
