@@ -1,8 +1,6 @@
 import React, {Fragment} from 'react'
 import Document, {Html, Head, Main, NextScript} from 'next/document'
 
-import logo from '../images/factae.png'
-
 // From https://github.com/zeit/next.js/blob/b4e4bcda9b6c3c3f43bd1dadef061d3b6ee0cc4d/packages/next/pages/_document.tsx#L132-L154
 class MyHead extends Head {
   getCssLinks() {
@@ -56,8 +54,6 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#0d125d" />
           <meta name="msapplication-TileImage" content="ms-icon-144x144.png" />
           <meta name="theme-color" content="#0d125d" />
-          <meta property="og:image" content={logo} />
-          <meta name="twitter:image" content={logo} />
           <link rel="apple-touch-icon" sizes="57x57" href="/static/apple-icon-57x57.png" />
           <link rel="apple-touch-icon" sizes="60x60" href="/static/apple-icon-60x60.png" />
           <link rel="apple-touch-icon" sizes="72x72" href="/static/apple-icon-72x72.png" />

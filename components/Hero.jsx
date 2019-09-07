@@ -33,7 +33,7 @@ function Hero() {
       <Container className={classes.container}>
         <h1 className={classes.title}>
           <span>Un outil comptable</span>
-          <span>dédiés aux micro-entrepreneurs,</span>
+          <span>dédié aux micro-entrepreneurs &hellip;</span>
           <span>au prix d'une baguette !</span>
         </h1>
         <div className={classes.form}>
