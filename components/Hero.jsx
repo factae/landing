@@ -31,9 +31,10 @@ function Hero() {
     >
       <Navbar />
       <Container className={classes.container}>
-        <h1 className={classes.h1}>
-          <span>Un outil de facturation ...</span>
-          <span className={classes.h1sub}>... au prix d'une baguette !?</span>
+        <h1 className={classes.title}>
+          <span>Un outil de facturation</span>
+          <span>pour micro-entrepreneurs</span>
+          <span>au prix d'une baguette !</span>
         </h1>
         <div className={classes.form}>
           <input className={classes.input} type="text" placeholder="Email" />
