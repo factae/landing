@@ -7,6 +7,7 @@ import About from '../components/About'
 import Features from '../components/Features'
 import Try from '../components/Try'
 import Biography from '../components/Biography'
+import Footer from '../components/Footer'
 
 const title = `factAE | L'outil de facturation au prix d'une baguette`
 const desc = "factAE est un outil d'aide à la facturation pour micro-entrepreneurs à 1€/mois."
@@ -23,6 +24,7 @@ function LandingPage() {
       <Features />
       <Try />
       <Biography />
+      <Footer />
     </>
   )
 }

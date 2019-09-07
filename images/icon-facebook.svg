@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="19px" viewBox="0 0 10 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>4592E727-3356-455F-85EE-41F827349A42</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04-landing-page-V2" transform="translate(-1063.000000, -5188.000000)">
+            <rect fill="#FAFAFA" x="0" y="0" width="1440" height="5340"></rect>
+            <g id="footer" transform="translate(-12.000000, 5121.000000)">
+                <polygon id="Rectangle" fill="#FFFFFF" points="-1.02318154e-12 0 1895 0 1895 220.810304 1129.85948 220.810304 -1.02318154e-12 220.810304"></polygon>
+                <g id="Social" transform="translate(1075.000000, 66.000000)" fill="#0D125D">
+                    <g id="icon-facebook" transform="translate(0.000000, 1.000000)">
+                        <path d="M6.137,18.993 L2.046,18.993 L2.046,9.499 L0.001,9.499 L0.001,6.226 L2.046,6.226 L2.046,4.262 C2.046,1.593 3.201,0.004 6.479,0.004 L9.209,0.004 L9.209,3.277 L7.504,3.277 C6.226,3.277 6.142,3.735 6.142,4.589 L6.137,6.226 L9.229,6.226 L8.867,9.499 L6.137,9.499 L6.137,18.993 L6.137,18.993 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
