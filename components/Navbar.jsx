@@ -16,7 +16,7 @@ function Navbar() {
           </Link>
         </span>
         <Link className={classes.link} to="/#">
-          À propos
+          Présentation
         </Link>
         <Link className={classes.link} to="/#">
           Fonctionnalités

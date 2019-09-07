@@ -1,0 +1,93 @@
+@import '../pages/variables';
+@import '../pages/mixins';
+
+.background {
+  background: $primary;
+}
+
+.container {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content;
+  grid-gap: 40px;
+  padding-top: 140px;
+  padding-bottom: 140px;
+
+  @include for-size(tablet-portrait-down) {
+    grid-gap: 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include for-size(tablet-landscape-down) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.title {
+  @include font(title);
+  color: $white;
+  font-size: 22px;
+  align-self: center;
+  justify-self: center;
+
+  @include for-size(tablet-landscape-down) {
+    font-size: 18px;
+  }
+}
+
+.form {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto 150px;
+  align-self: center;
+  justify-self: center;
+
+  @include for-size(tablet-landscape-down) {
+    grid-template-columns: auto 100px;
+  }
+}
+
+.input {
+  border: none;
+  padding: 28px 23px;
+  border-radius: 3px 0 0 3px;
+  font-size: 16px;
+  width: 250px;
+  height: 72px;
+  grid-row: 1;
+  grid-column: 1;
+
+  @include for-size(tablet-landscape-down) {
+    height: 50px;
+    padding: 20px;
+  }
+
+  @include for-size(tablet-portrait-down) {
+    width: 100%;
+  }
+}
+
+.button {
+  @include font(title);
+  font-weight: 600;
+  color: $white;
+  background: $secondary;
+  border: none;
+  height: 72px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  padding: 28px 40px;
+  border-radius: 0 10px 10px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  grid-row: 1;
+  grid-column: 2;
+
+  @include for-size(tablet-landscape-down) {
+    height: 50px;
+    padding: 20px;
+  }
+}
+

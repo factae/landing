@@ -32,7 +32,7 @@ function Hero() {
       <Navbar />
       <Container className={classes.container}>
         <h1 className={classes.title}>
-          <span>Un outil de facturation</span>
+          <span>Un outil comptable</span>
           <span>pour micro-entrepreneurs</span>
           <span>au prix d'une baguette !</span>
         </h1>

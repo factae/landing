@@ -10,7 +10,7 @@ import classes from './About.styles.scss'
 function About() {
   return (
     <Container className={classes.container}>
-      <h2 className={classes.title}>À propos</h2>
+      <h2 className={classes.title}>Présentation</h2>
       <img className={classes.video} src={background} alt="Vidéo de présentation de factAE" />
       <img className={classes.player} src={player} alt="" />
       <p className={classes.content}>
