@@ -11,7 +11,7 @@ function buildSitemapFile() {
   }
 
   const config = {
-    hostname: process.env.HOSTNAME,
+    hostname: process.env.HOSTNAME_LANDING,
     cacheTime: 3600,
     urls: [url],
   }

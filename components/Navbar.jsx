@@ -11,18 +11,20 @@ function Navbar() {
     <Container className={classes.container}>
       <nav className={classes.nav}>
         <span className={classes.logo}>
-          <Logo />
+          <Link to="#">
+            <Logo />
+          </Link>
         </span>
-        <Link className={classes.link} to="/#">
+        <Link className={classes.link} to="#about">
           Présentation
         </Link>
-        <Link className={classes.link} to="/#">
+        <Link className={classes.link} to="#features">
           Fonctionnalités
         </Link>
-        <Link className={classes.link} to="/#">
+        <Link className={classes.link} to="#blog">
           Blog
         </Link>
-        <Link className={classes.button} to="/#">
+        <Link className={classes.button} to={process.env.HOSTNAME_APP + '/auth'}>
           Créer un compte
         </Link>
       </nav>

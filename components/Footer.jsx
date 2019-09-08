@@ -13,23 +13,27 @@ function Footer() {
   return (
     <footer className={classes.background}>
       <Container className={classes.container}>
-        <Logo className={classes.logo} />
+        <span className={classes.logo}>
+          <Link to="#">
+            <Logo />
+          </Link>
+        </span>
         <span className={classes.about}>
-          <a href="#">Présentation</a>
+          <Link to="#about">À propos</Link>
         </span>
         <span className={classes.features}>
-          <a href="#">Fonctionnalités</a>
+          <Link to="#features">Fonctionnalités</Link>
         </span>
         <span className={classes.license}>
-          <a href="#">Licence</a>
+          <Link to="/">Licence</Link>
         </span>
         <span className={classes.confidentiality}>
-          <a href="#">Confidentialité</a>
+          <Link to="/">Confidentialité</Link>
         </span>
         <span className={classes.mentions}>
-          <a href="#">Mentions légales</a>
+          <Link to="/">Mentions légales</Link>
         </span>
-        <div className={classes.medias} href="#">
+        <div className={classes.medias}>
           <span>
             <Link className={classes.media} to="https://www.facebook.com/">
               <img src={facebook} alt="Facebook" />

@@ -43,7 +43,7 @@ function mapFeatures(callback) {
 
 function Features() {
   return (
-    <Container className={classes.container}>
+    <Container id="features" className={classes.container}>
       <h2 className={classes.title}>Fonctionnalités</h2>
       {mapFeatures((feature, gridRow, direction) => (
         <>
