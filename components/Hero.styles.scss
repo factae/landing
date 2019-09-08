@@ -121,6 +121,11 @@
   }
 }
 
+.label {
+  grid-row: 1;
+  grid-column: 1;
+}
+
 .input {
   border: none;
   padding: 28px 23px;
@@ -140,7 +145,7 @@
 .button {
   @include font(title);
   font-weight: 600;
-  color: $white;
+  color: $button-text;
   background: $secondary;
   border: none;
   height: 72px;

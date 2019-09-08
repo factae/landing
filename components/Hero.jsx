@@ -37,7 +37,10 @@ function Hero() {
           <span>au prix d'une baguette !</span>
         </h1>
         <div className={classes.form}>
-          <input className={classes.input} type="text" placeholder="Email" />
+          <label className={classes.label} htmlFor="hero-email">
+            Email
+          </label>
+          <input id="hero-email" className={classes.input} type="text" placeholder="Email" />
           <button className={classes.button}>Essayer</button>
         </div>
         <h2 className={classes.h2}>

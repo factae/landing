@@ -10,7 +10,10 @@ function Try() {
       <Container className={classes.container}>
         <h2 className={classes.title}>Essayez gratuitement</h2>
         <div className={classes.form}>
-          <input className={classes.input} type="text" placeholder="Email" />
+          <label className={classes.label} htmlFor="try-email">
+            Email
+          </label>
+          <input id="try-email" className={classes.input} type="text" placeholder="Email" />
           <button className={classes.button}>Essayer</button>
         </div>
       </Container>

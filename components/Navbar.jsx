@@ -11,9 +11,7 @@ function Navbar() {
     <Container className={classes.container}>
       <nav className={classes.nav}>
         <span className={classes.logo}>
-          <Link to="/">
-            <Logo />
-          </Link>
+          <Logo />
         </span>
         <Link className={classes.link} to="/#">
           Présentation
