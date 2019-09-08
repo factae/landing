@@ -13,7 +13,7 @@
 
 .nav {
   display: grid;
-  grid-template-columns: auto repeat(4, max-content);
+  grid-template-columns: auto repeat(2, max-content);
   grid-template-rows: 1fr;
   grid-auto-flow: row;
   grid-column-gap: 50px;
@@ -35,6 +35,7 @@
 
   @include for-size(tablet-portrait-down) {
     margin-right: 25px;
+    margin-bottom: 10px;
   }
 }
 
@@ -64,12 +65,16 @@
   line-height: 18px;
   padding: 16px 40px;
   font-size: 12px;
-  color: $button-text;
+  color: $primary;
   background: $secondary;
   text-transform: uppercase;
   text-decoration: none;
 
   @include for-size(tablet-landscape-down) {
+    padding: 12px 20px;
+  }
+
+  @include for-size(tablet-portrait-down) {
     display: none;
   }
 }

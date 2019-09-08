@@ -15,9 +15,6 @@ function Navbar() {
             <Logo />
           </Link>
         </span>
-        <Link className={classes.link} to="#about">
-          Pourquoi ?
-        </Link>
         <Link className={classes.link} to="#features">
           Fonctionnalités
         </Link>

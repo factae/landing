@@ -41,6 +41,12 @@ function Hero() {
           <span>L'outil comptable</span>
           <span>au prix d'une baguette !</span>
         </h1>
+        <p className={classes.about}>
+          factAE est un <strong>outil comptable</strong> dédié aux{' '}
+          <strong>micro-entrepreneurs</strong> (anciennement auto-entrepreneurs). Son objectif est
+          simple : permettre à tout micro-entrepreneur de gérer facilement et efficacement sa
+          comptabilité pour <strong>1€/mois</strong>. Rien de plus.
+        </p>
         <form className={classes.form} onSubmit={redirectToApp}>
           <label className={classes.label} htmlFor="hero-email">
             Email
@@ -55,11 +61,11 @@ function Hero() {
           />
           <button className={classes.button}>Essayer</button>
         </form>
-        <h2 className={classes.h2}>
-          <span className={classes.h2amount}>1€</span>
-          <span className={classes.h2slash}>/</span>
-          <span className={classes.h2unit}>mois</span>
-          <div className={classes.h2sub}>Gratuit la première année</div>
+        <h2 className={classes.subtitle}>
+          <span className={classes.subtitleAmount}>1€</span>
+          <span className={classes.subtitleSlash}>/</span>
+          <span className={classes.subtitleUnit}>mois</span>
+          <div className={classes.subtitleContent}>Gratuit la première année</div>
         </h2>
         <animated.img
           className={classes.screenshot}

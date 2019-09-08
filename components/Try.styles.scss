@@ -6,27 +6,29 @@
 }
 
 .container {
-  margin-top: 80px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: min-content;
-  grid-gap: 40px;
-  padding-top: 140px;
-  padding-bottom: 140px;
-
-  @include for-size(tablet-portrait-down) {
-    grid-gap: 15px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+  grid-gap: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 
   @include for-size(tablet-landscape-down) {
     grid-template-columns: 1fr;
+    grid-gap: 25px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  @include for-size(tablet-portrait-down) {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
 .title {
   @include font(title);
+  margin: 0;
   color: $white;
   font-size: 22px;
   align-self: center;
@@ -77,7 +79,7 @@
 .button {
   @include font(title);
   font-weight: 600;
-  color: $button-text;
+  color: $primary;
   background: $secondary;
   border: none;
   height: 72px;

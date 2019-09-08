@@ -3,6 +3,7 @@
 
 .container {
   margin-top: 50px;
+  margin-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: min-content 1fr;
@@ -42,6 +43,7 @@
   transition-duration: 250ms;
   transition-property: box-shadow, transform;
   text-align: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
 
   svg {
     [data-fill] {
