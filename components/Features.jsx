@@ -1,35 +1,53 @@
 import React, {Fragment, useEffect, useRef} from 'react'
 import {useSpring, animated} from 'react-spring'
 
-import screenshot from '../images/hero-screenshot.jpeg'
+import featureA from '../images/feature-a.jpeg'
+import featureB from '../images/feature-b.jpeg'
+import featureC from '../images/feature-c.jpeg'
+import featureD from '../images/feature-d.jpeg'
+import featureE from '../images/feature-e.jpeg'
+import featureSoon from '../images/hero-screenshot.jpeg'
 import Container from './Container'
 
 import classes from './Features.styles.scss'
 
 const features = [
   {
-    image: screenshot,
-    title: 'Tout en un',
-    content:
-      'Vous pouvez suivre votre chiffre d’affaires encaissé sur 30 jours, les devis en cours et les factures en retard. factAE vous avertit si vous dépassez le plafond des micro-entrepreneurs. Pas besoin de vous creuser la tête !',
+    image: featureA,
+    title: 'Gestion simplifiée',
+    content: `Gérez vos clients. Gérez vos documents (devis, factures, avoirs). Visualisez votre chiffre d'affaire, vos devis en cours, vos paiements en attente, vos seuils.`,
   },
   {
-    image: screenshot,
-    title: 'Devis, factures, avoirs',
-    content:
-      'Vous pouvez suivre votre chiffre d’affaires encaissé sur 30 jours, les devis en cours et les factures en retard. factAE vous avertit si vous dépassez le plafond des micro-entrepreneurs. Pas besoin de vous creuser la tête !',
+    image: featureB,
+    title: 'Registre automatique',
+    content: `Tenir un livre des recettes est obligatoire. factAE le fait pour vous, en se basant sur vos documents. Vous avez également accès à un registre des achats si votre activité le requiert.`,
   },
   {
-    image: screenshot,
-    title: 'Envoi et relance automatique',
-    content:
-      'Vous pouvez suivre votre chiffre d’affaires encaissé sur 30 jours, les devis en cours et les factures en retard. factAE vous avertit si vous dépassez le plafond des micro-entrepreneurs. Pas besoin de vous creuser la tête !',
+    image: featureC,
+    title: 'Paiement sécurisé en anonyme',
+    content: `L'abonnement est payable par carte bancaire. Le paiement est totalement sécurisé et anonyme (aucune donnée n'est collectée).`,
   },
   {
-    image: screenshot,
-    title: 'Plus besoin de renseigner les infos de votre client !',
-    content:
-      'Vous pouvez suivre votre chiffre d’affaires encaissé sur 30 jours, les devis en cours et les factures en retard. factAE vous avertit si vous dépassez le plafond des micro-entrepreneurs. Pas besoin de vous creuser la tête !',
+    image: featureD,
+    title: 'Support',
+    content: `Une question ? Un avis ? Un bug ? Une nouvelle fonctionnalité à proposer ? N'hésitez-pas à nous contacter, nous nous ferons un plaisir de vous répondre.`,
+  },
+  {
+    image: featureE,
+    title: 'Envoi / relance automatique',
+    content: `Envoyez directement vos documents par mail via l'application. Réduisez vos impayés grâce aux relances automatiques.`,
+  },
+  {
+    soon: true,
+    image: featureSoon,
+    title: 'Ne renseignez plus vous-même vos fiches clients',
+    content: `factAE offre la possibilité de demander à vos clients leurs informations via un formulaire. Une fois saisies, les informations s'intègrent directement à votre compte.`,
+  },
+  {
+    soon: true,
+    image: featureSoon,
+    title: 'Signature et règlement en ligne',
+    content: `Grâce à la blockchain, faites signer vos devis et faites-vous régler en ligne rapidement.`,
   },
 ]
 
@@ -87,6 +105,17 @@ function Feature({direction, gridRow, feature}) {
           transform: spring.transform.interpolate(transform),
         }}
       />
+      {feature.soon && (
+        <animated.div
+          className={classes.featureSoon}
+          data-direction={direction}
+          style={{
+            gridRow,
+            opacity: spring.opacity,
+            transform: spring.transform.interpolate(transform),
+          }}
+        />
+      )}
     </>
   )
 }

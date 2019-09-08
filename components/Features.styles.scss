@@ -6,8 +6,8 @@
   margin-bottom: 50px;
   display: grid;
   grid-template-columns: 5fr 2fr 5fr;
-  grid-row-gap: 50px;
-  grid-column-gap: 40px;
+  grid-row-gap: 75px;
+  grid-column-gap: 50px;
 
   @include for-size(tablet-landscape-down) {
     grid-template-columns: 1fr;
@@ -34,7 +34,7 @@
   }
 }
 
-.featureImage {
+@mixin feature-layout {
   align-self: center;
   border-radius: 7px;
   box-shadow: 0 2px 14px 0 rgba(0, 0, 0, .12);
@@ -61,6 +61,33 @@
   @include for-size(tablet-landscape-down) {
     margin-top: 25px;
     margin-bottom: 25px;
+  }
+}
+
+.featureImage {
+  @include feature-layout;
+}
+
+.featureSoon {
+  @include feature-layout;
+  height: 100%;
+  background: $red;
+  opacity: .9 !important;
+
+  &::after {
+    @include font(title);
+    font-size: 35px;
+    font-weight: 600;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: 'Prochainement'
   }
 }
 
