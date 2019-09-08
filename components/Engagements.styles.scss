@@ -112,4 +112,9 @@
   font-size: 16px;
   color: $placeholder;
   transition: opacity 250ms;
+  text-align: justify;
+
+  @include for-size(tablet-landscape-down) {
+    text-align: center;
+  }
 }

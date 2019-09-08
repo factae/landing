@@ -13,26 +13,25 @@ function Engagements() {
       <h2 className={classes.title}>factAE s'engage</h2>
       <div className={classes.engagement}>
         <IconFree />
-        <h3 className={classes.engagementTitle}>Gratuit sur 1 an</h3>
+        <h3 className={classes.engagementTitle}>Un essai gratuit de 30 jours</h3>
         <div className={classes.engagementDesc}>
-          Le paiement par Carte Bancaire est sécurisé. Vos données restent évidemment
-          confidentielles.
+          Testez factAE gratuitement et sans engagement pendant 30 jours.
         </div>
       </div>
       <div className={classes.engagement}>
         <IconSimple />
         <h3 className={classes.engagementTitle}>Un outil simple</h3>
         <div className={classes.engagementDesc}>
-          Le paiement par Carte Bancaire est sécurisé. Vos données restent évidemment
-          confidentielles.
+          factAE se veut simple et intuitif, afin que n'importe quel micro-entrepreneur puisse tenir
+          sa comptabilité.
         </div>
       </div>
       <div className={classes.engagement}>
         <IconSecure />
         <h3 className={classes.engagementTitle}>Un espace sécurisé</h3>
         <div className={classes.engagementDesc}>
-          Le paiement par Carte Bancaire est sécurisé. Vos données restent évidemment
-          confidentielles.
+          Vos données personnelles ne sont en aucun cas cédées ou vendues à des tiers. Le paiement
+          par carte bancaire est sécurisé et anonyme.
         </div>
       </div>
     </Container>

@@ -66,10 +66,17 @@
 
 .featureImage {
   @include feature-layout;
+
+  @include for-size(tablet-landscape-down) {
+    &[data-soon=true] {
+      display: none;
+    }
+  }
 }
 
 .featureSoon {
   @include feature-layout;
+  min-height: 150px;
   height: 100%;
   background: $red;
   opacity: .9 !important;
@@ -87,7 +94,11 @@
     right: 0;
     top: 0;
     bottom: 0;
-    content: 'Prochainement'
+    content: 'Prochainement';
+
+    @include for-size(tablet-landscape-down) {
+      font-size: 25px;
+    }
   }
 }
 

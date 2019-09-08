@@ -98,6 +98,7 @@ function Feature({direction, gridRow, feature}) {
         className={classes.featureImage}
         src={feature.image}
         alt={feature.title}
+        data-soon={feature.soon}
         data-direction={direction}
         style={{
           gridRow,
