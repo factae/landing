@@ -65,7 +65,7 @@
   grid-column: 1;
 
   @include for-size(tablet-landscape-down) {
-    height: 50px;
+    height: 60px;
     padding: 20px;
   }
 
@@ -91,7 +91,7 @@
   grid-column: 2;
 
   @include for-size(tablet-landscape-down) {
-    height: 50px;
+    height: 60px;
     padding: 20px;
   }
 }

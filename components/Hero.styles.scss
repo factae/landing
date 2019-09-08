@@ -74,6 +74,10 @@
     @include for-size(desktop-down) {
       margin: 0;
     }
+
+    @include for-size(tablet-portrait-down) {
+      font-size: 26px;
+    }
   }
 
   span:nth-child(2) {
@@ -87,15 +91,9 @@
     @include for-size(tablet-landscape-down) {
       margin-top: 0;
     }
-  }
 
-  span:nth-child(3) {
-    @include font(text);
-    font-size: 16px;
-    margin-top: 8px;
-
-    @include for-size(desktop-down) {
-      margin: 0;
+    @include for-size(tablet-portrait-down) {
+      font-size: 20px;
     }
   }
 }
@@ -137,7 +135,7 @@
   grid-column: 1;
 
   @include for-size(tablet-landscape-down) {
-    height: 50px;
+    height: 60px;
     padding: 20px;
   }
 }
@@ -159,7 +157,7 @@
   grid-column: 2;
 
   @include for-size(tablet-landscape-down) {
-    height: 50px;
+    height: 60px;
     padding: 20px;
   }
 }

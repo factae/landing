@@ -22,11 +22,11 @@
 
 .title {
   @include font(title);
+  margin: 0;
   font-size: 36px;
   grid-row: 1;
   grid-column: 1 / span 3;
   justify-self: center;
-  margin: 10px 0;
 
   @include for-size(tablet-landscape-down) {
     font-size: 26px;

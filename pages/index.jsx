@@ -6,7 +6,6 @@ import Engagements from '../components/Engagements'
 import About from '../components/About'
 import Features from '../components/Features'
 import Try from '../components/Try'
-import Biography from '../components/Biography'
 import Footer from '../components/Footer'
 
 const title = `factAE - L'outil comptable au prix d'une baguette`
@@ -18,11 +17,10 @@ function LandingPage() {
     <>
       <SEO title={title} desc={desc} tags={tags} />
       <Hero />
-      <Engagements />
       <About />
+      <Engagements />
       <Features />
       <Try />
-      <Biography />
       <Footer />
     </>
   )

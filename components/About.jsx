@@ -1,23 +1,32 @@
 import React from 'react'
 
+import avatar from '../images/clement-douin.jpeg'
 import Container from './Container'
-
-import background from '../images/about-background.jpeg'
-import player from '../images/about-player.png'
 
 import classes from './About.styles.scss'
 
 function About() {
   return (
     <Container id="about" className={classes.container}>
-      <h2 className={classes.title}>Présentation</h2>
-      <img className={classes.video} src={background} alt="Vidéo de présentation de factAE" />
-      <img className={classes.player} src={player} alt="" />
-      <p className={classes.content}>
-        Que vous soyez artisan, commerçant ou profession libérale, FactAE est un outil d'aide à la
-        facturation pour micro-entrepreneurs à 1€/mois. C’est simple : il gére vos clients, les
-        devis et les factures facilement et efficacement. Rien de plus.
+      <h2 className={classes.title}>Pourquoi factAE ?</h2>
+      <p className={classes.about}>
+        factAE est un outil d'aide à la facturation dédié aux <strong>micro-entrepreneurs</strong>{' '}
+        (anciennement auto-entrepreneurs). Son objectif est simple : permettre à tout
+        micro-entrepreneur de gérer facilement et efficacement sa comptabilité pour 1€ par mois.
+        Rien de plus.
       </p>
+      <img className={classes.avatar} src={avatar} alt="Clément DOUIN" />
+      <h3 className={classes.subtitle}>
+        <strong>Clément DOUIN, </strong>
+        fondateur
+      </h3>
+      <blockquote className={classes.biography}>
+        &laquo; La comptabilité est le point noir de toutes entreprises. En tant que
+        micro-entrepreneurs, nous avons la chance d'en avoir une simplifiée. Je trouvais les outils
+        sur le marché bien trop complexes pour notre statut. C’est ainsi qu'est né factAE, un outil
+        intuitif, économique et adapté au besoins comptables minimalistes des micro-entrepreneurs.
+        &raquo;
+      </blockquote>
     </Container>
   )
 }

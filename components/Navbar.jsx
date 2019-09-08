@@ -16,13 +16,10 @@ function Navbar() {
           </Link>
         </span>
         <Link className={classes.link} to="#about">
-          Présentation
+          Pourquoi ?
         </Link>
         <Link className={classes.link} to="#features">
           Fonctionnalités
-        </Link>
-        <Link className={classes.link} to="#blog">
-          Blog
         </Link>
         <Link className={classes.button} to={process.env.HOSTNAME_APP + '/auth'}>
           Créer un compte

@@ -9,10 +9,6 @@
   @include for-size(desktop-down) {
     margin-top: 25px;
   }
-
-  @include for-size(tablet-portrait-down) {
-    margin-top: 15px;
-  }
 }
 
 .nav {
@@ -27,9 +23,8 @@
   }
 
   @include for-size(tablet-portrait-down) {
-    grid-template-columns: repeat(3, max-content);
-    justify-content: center;
-    border-bottom: 1px solid $secondary;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 }
 
@@ -39,7 +34,7 @@
   align-self: center;
 
   @include for-size(tablet-portrait-down) {
-    display: none;
+    margin-right: 25px;
   }
 }
 
@@ -56,7 +51,7 @@
   }
 
   @include for-size(tablet-portrait-down) {
-    justify-self: center;
+    display: none;
   }
 }
 

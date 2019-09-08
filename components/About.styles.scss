@@ -1,84 +1,108 @@
 @import '../pages/variables';
 @import '../pages/mixins';
 
+@mixin text {
+  margin: 0;
+  color: $placeholder;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+}
+
 .container {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: min-content 1fr;
-  grid-gap: 50px;
+  grid-template-columns: 2fr 7fr 2fr;
+  grid-template-rows: repeat(4, min-content);
+  grid-column-gap: 50px;
+  grid-row-gap: 10px;
 
   @include for-size(tablet-landscape-down) {
+    grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: repeat(2, min-content) 1fr;
     grid-gap: 25px;
   }
 
   @include for-size(tablet-portrait-down) {
     grid-gap: 15px;
+    grid-template-columns: 1fr;
   }
 }
 
 .title {
   @include font(title);
+  margin: 0;
   font-size: 36px;
-  grid-row: 1;
   grid-column: 1 / span 3;
+  grid-row: 1;
   justify-self: center;
-  margin: 10px 0;
 
   @include for-size(tablet-landscape-down) {
     font-size: 26px;
   }
-}
 
-.video {
-  border-radius: 15px;
-  grid-row: 2;
-  grid-column: 1;
-  align-self: center;
-  justify-self: center;
-  cursor: pointer;
-  width: 100%;
-  max-width: 445px;
-
-  &:hover + .player {
-    transform: scale(1.2);
-  }
-
-  @include for-size(tablet-landscape-down) {
-    grid-row: 3;
-    grid-column: 1 / -1;
+  @include for-size(tablet-portrait-down) {
+    grid-column: 1;
   }
 }
 
-.player {
-  grid-row: 2;
-  grid-column: 1;
-  align-self: center;
-  justify-self: center;
-  transition: transform 250ms;
-  cursor: pointer;
-
-  &:hover {
-    transform: scale(1.2);
-  }
-
-  @include for-size(tablet-landscape-down) {
-    grid-row: 3;
-    grid-column: 1 / -1;
-  }
-}
-
-.content {
-  color: $placeholder;
-  margin: 0 0 10px 0;
-  font-size: 16px;
+.about {
+  @include text;
+  grid-column: 2;
+  margin: 25px 0 50px 0;
   justify-self: center;
   align-self: center;
 
-  @include for-size(tablet-landscape-down) {
+  @include for-size(tablet-portrait-down) {
+    grid-column: 1;
     grid-row: 2;
-    grid-column: 1 / -1;
-    text-align: center;
+    margin: 25px 0;
+  }
+}
+
+.avatar {
+  grid-column: 1;
+  grid-row: 3 / span 4;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  justify-self: end;
+
+  @include for-size(tablet-portrait-down) {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: center;
+  }
+}
+
+.subtitle {
+  @include font(text);
+  margin: 0;
+  font-size: 22px;
+  font-weight: 300;
+  grid-column: 2;
+  grid-row: 3;
+
+  @include for-size(tablet-landscape-down) {
+    font-size: 18px;
+  }
+
+  @include for-size(tablet-portrait-down) {
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: center;
+  }
+}
+
+.biography {
+  @include font(text);
+  @include text;
+  font-style: italic;
+  grid-column: 2;
+  grid-row: 4;
+
+  @include for-size(tablet-portrait-down) {
+    grid-column: 1;
+    grid-row: 5;
   }
 }

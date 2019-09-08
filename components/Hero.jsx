@@ -38,8 +38,7 @@ function Hero() {
       <Navbar />
       <Container className={classes.container}>
         <h1 className={classes.title}>
-          <span>Un outil comptable</span>
-          <span>dédié aux micro-entrepreneurs &hellip;</span>
+          <span>L'outil comptable</span>
           <span>au prix d'une baguette !</span>
         </h1>
         <form className={classes.form} onSubmit={redirectToApp}>
