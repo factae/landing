@@ -46,14 +46,32 @@ class MyDocument extends Document {
     return (
       <Html lang="fr">
         <MyHead>
-          <link rel="preload" href="/static/fonts/Heebo.woff2" as="font" crossOrigin="true" />
-          <link rel="preload" href="/static/fonts/Poppins.woff2" as="font" crossOrigin="true" />
           <meta charSet="utf-8" />
           <meta name="author" content="Clément DOUIN" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="msapplication-TileColor" content="#0d125d" />
           <meta name="msapplication-TileImage" content="ms-icon-144x144.png" />
           <meta name="theme-color" content="#0d125d" />
+          <link rel="preload" href="/static/fonts/Heebo-Light.woff2" as="font" crossOrigin="true" />
+          <link
+            rel="preload"
+            href="/static/fonts/Heebo-Regular.woff2"
+            as="font"
+            crossOrigin="true"
+          />
+          <link rel="preload" href="/static/fonts/Heebo-Bold.woff2" as="font" crossOrigin="true" />
+          <link
+            rel="preload"
+            href="/static/fonts/Poppins-SemiBold.woff2"
+            as="font"
+            crossOrigin="true"
+          />
+          <link
+            rel="preload"
+            href="/static/fonts/Poppins-Bold.woff2"
+            as="font"
+            crossOrigin="true"
+          />
           <link rel="apple-touch-icon" sizes="57x57" href="/static/apple-icon-57x57.png" />
           <link rel="apple-touch-icon" sizes="60x60" href="/static/apple-icon-60x60.png" />
           <link rel="apple-touch-icon" sizes="72x72" href="/static/apple-icon-72x72.png" />
