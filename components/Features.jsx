@@ -65,9 +65,9 @@ function Feature({direction, gridRow, feature}) {
   const ratio = direction === 'normal' ? 1 : -1
   const ref = useRef()
   const [spring, set] = useSpring(() => ({
-    config: {mass: 4, tension: 550, friction: 100},
+    config: {mass: 1, tension: 150, friction: 40},
     opacity: 0,
-    transform: [1000 * ratio, 50 * ratio, 0],
+    transform: [750 * ratio, 100 * ratio, 0],
   }))
 
   function handleScroll() {

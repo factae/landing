@@ -65,7 +65,7 @@ function Hero() {
           <span className={classes.subtitleAmount}>1€</span>
           <span className={classes.subtitleSlash}>/</span>
           <span className={classes.subtitleUnit}>mois</span>
-          <div className={classes.subtitleContent}>Gratuit la première année</div>
+          <div className={classes.subtitleContent}>Essai gratuit de 30 jours</div>
         </h2>
         <animated.img
           className={classes.screenshot}

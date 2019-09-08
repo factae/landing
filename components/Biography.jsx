@@ -17,7 +17,7 @@ function Biography() {
         &laquo; La comptabilité est le point noir de toutes entreprises. En tant que
         micro-entrepreneurs, nous avons la chance d'en avoir une simplifiée. Je trouvais les outils
         sur le marché bien trop complexes pour notre statut. C’est ainsi qu'est né factAE, un outil
-        intuitif, économique et adapté au besoins comptables minimalistes des micro-entrepreneurs.
+        intuitif, économique et adapté aux besoins comptables minimalistes des micro-entrepreneurs.
         &raquo;
       </blockquote>
     </Container>
