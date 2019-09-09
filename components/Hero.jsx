@@ -8,19 +8,18 @@ import Navbar from './Navbar'
 
 import classes from './Hero.styles.scss'
 
-const move = (x, y) => [-(y - window.innerHeight / 2) / 200, (x - window.innerWidth / 2) / 250]
-const transform = (x, y) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg)`
+const move = (x, y) => [-(y - window.innerHeight / 2) / 200, (x - window.innerWidth / 2) / 250, 1]
+const transform = (x, y, z) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${z})`
 
 function Hero() {
   const emailRef = useRef()
   const [spring, set] = useSpring(() => ({
     config: {mass: 2, tension: 350, friction: 40},
     from: {
-      xy: [0, 0],
-      scale: 0,
+      xyz: [0, 0, 0],
     },
     to: {
-      scale: 1,
+      xyz: [0, 0, 1],
     },
   }))
 
@@ -32,7 +31,7 @@ function Hero() {
   return (
     <section
       className={classes.background}
-      onMouseMove={({clientX: x, clientY: y}) => set({xy: move(x, y)})}
+      onMouseMove={({clientX: x, clientY: y}) => set({xyz: move(x, y)})}
       style={{backgroundImage: `url(${background})`}}
     >
       <Navbar />
@@ -71,7 +70,7 @@ function Hero() {
           className={classes.screenshot}
           src={screenshot}
           alt="Capture d'écran de factAE"
-          style={{transform: spring.xy.interpolate(transform)}}
+          style={{transform: spring.xyz.interpolate(transform)}}
         />
       </Container>
     </section>
