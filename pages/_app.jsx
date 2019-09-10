@@ -17,7 +17,7 @@ class MyApp extends App {
 
   componentDidMount() {
     ReactGA.initialize(process.env.GOOGLE_ANALYTICS_ID)
-    ReactGA.pageview(window.location.pathname + window.location.search)
+    ReactGA.pageview(window.location.href)
   }
 
   render() {
