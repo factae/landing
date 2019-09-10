@@ -35,17 +35,17 @@ function Footer() {
         </span>
         <div className={classes.medias}>
           <span>
-            <Link className={classes.media} to="https://www.facebook.com/">
+            <Link className={classes.media} to="https://www.facebook.com/factAE-114400436596751">
               <img src={facebook} alt="Facebook" />
             </Link>
           </span>
           <span>
-            <Link className={classes.media} to="https://twitter.com/">
+            <Link className={classes.media} to="https://twitter.com/factaeOfficial">
               <img src={twitter} alt="Facebook" />
             </Link>
           </span>
           <span>
-            <Link className={classes.media} to="https://www.linkedin.com">
+            <Link className={classes.media} to="https://www.linkedin.com/company/factae">
               <img src={linkedIn} alt="Facebook" />
             </Link>
           </span>
