@@ -19,19 +19,19 @@ function Footer() {
           </Link>
         </span>
         <span className={classes.about}>
-          <Link to="#about">À propos</Link>
+          <Link to="#">À propos</Link>
         </span>
         <span className={classes.features}>
           <Link to="#features">Fonctionnalités</Link>
         </span>
         <span className={classes.license}>
-          <Link to="/">Licence</Link>
+          <Link to="#license">Licence</Link>
         </span>
         <span className={classes.confidentiality}>
-          <Link to="/">Confidentialité</Link>
+          <Link to="#confidentiality">Confidentialité</Link>
         </span>
         <span className={classes.mentions}>
-          <Link to="/">Mentions légales</Link>
+          <Link to="#legal-mentions">Mentions légales</Link>
         </span>
         <div className={classes.medias}>
           <span>

@@ -37,11 +37,11 @@ function Hero() {
       <Navbar />
       <Container className={classes.container}>
         <h1 className={classes.title}>
-          <span>L'outil comptable</span>
+          <span>L'outil de facturation</span>
           <span>au prix d'une baguette !</span>
         </h1>
         <p className={classes.about}>
-          factAE est un <strong>outil comptable</strong> dédié aux{' '}
+          factAE est un outil de <strong>facturation</strong> dédié aux{' '}
           <strong>micro-entrepreneurs</strong> (anciennement auto-entrepreneurs). Son objectif est
           simple : permettre à tout micro-entrepreneur de gérer facilement et efficacement sa
           comptabilité pour <strong>1€/mois</strong>. Rien de plus.
