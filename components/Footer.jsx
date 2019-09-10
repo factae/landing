@@ -3,6 +3,7 @@ import React from 'react'
 import facebook from '../images/icon-facebook.svg'
 import twitter from '../images/icon-twitter.svg'
 import linkedIn from '../images/icon-linkedin.svg'
+import gitHub from '../images/icon-github.svg'
 import Container from './Container'
 import Logo from './Logo'
 import Link from './Link'
@@ -14,7 +15,7 @@ function Footer() {
     <footer className={classes.background}>
       <Container className={classes.container}>
         <span className={classes.logo}>
-          <Link to="#">
+          <Link to="#" title="factAE">
             <Logo />
           </Link>
         </span>
@@ -36,17 +37,22 @@ function Footer() {
         <div className={classes.medias}>
           <span>
             <Link className={classes.media} to="https://www.facebook.com/factAE-114400436596751">
-              <img src={facebook} alt="Facebook" />
+              <img src={facebook} alt="Facebook" title="Facebook" />
             </Link>
           </span>
           <span>
             <Link className={classes.media} to="https://twitter.com/factaeOfficial">
-              <img src={twitter} alt="Facebook" />
+              <img src={twitter} alt="Twitter" title="Twitter" />
             </Link>
           </span>
           <span>
             <Link className={classes.media} to="https://www.linkedin.com/company/factae">
-              <img src={linkedIn} alt="Facebook" />
+              <img src={linkedIn} alt="LinkedIn" title="LinkedIn" />
+            </Link>
+          </span>
+          <span>
+            <Link className={classes.media} to="https://github.com/factae">
+              <img src={gitHub} alt="GitHub" title="GitHub" />
             </Link>
           </span>
         </div>

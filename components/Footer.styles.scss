@@ -106,7 +106,7 @@
   @include forth-column;
   grid-row: 1;
   display: grid;
-  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
   align-items: center;
 
   @include for-size(tablet-portrait-down) {

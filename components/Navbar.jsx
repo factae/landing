@@ -11,7 +11,7 @@ function Navbar() {
     <Container className={classes.container}>
       <nav className={classes.nav}>
         <span className={classes.logo}>
-          <Link to="#">
+          <Link to="#" title="factAE">
             <Logo />
           </Link>
         </span>

@@ -16,16 +16,18 @@ function Link({to, className: customClassName, children, ...props}) {
 
   if (to.startsWith('/')) {
     return (
-      <NextLink href={to} {...props}>
-        <a className={className}>{children}</a>
+      <NextLink href={to}>
+        <a className={className} {...props}>
+          {children}
+        </a>
       </NextLink>
     )
   }
 
   if (to.startsWith('#')) {
     return (
-      <NextLink href={to} {...props}>
-        <a className={className} onClick={scrollToId}>
+      <NextLink href={to}>
+        <a className={className} onClick={scrollToId} {...props}>
           {children}
         </a>
       </NextLink>
@@ -33,8 +35,8 @@ function Link({to, className: customClassName, children, ...props}) {
   }
 
   return (
-    <NextLink href={to} {...props}>
-      <a className={className} target="_blank" rel="noopener noreferrer">
+    <NextLink href={to}>
+      <a className={className} target="_blank" rel="noopener noreferrer" {...props}>
         {children}
       </a>
     </NextLink>
