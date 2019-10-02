@@ -95,20 +95,23 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <script type="application/ld+json">
-            {
-              "@context": "http://schema.org",
-              "@type": "Organization",
-              "name": "factAE",
-              "url": "https://factae.fr",
-              "address": "",
-              "sameAs": [
-                "https://www.facebook.com/factAE-114400436596751",
-                "https://twitter.com/factaeOfficial",
-                "https://www.linkedin.com/company/factae"
-              ]
-            }
-          </script>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: `{
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "name": "factAE",
+                "url": "https://factae.fr",
+                "address": "",
+                "sameAs": [
+                  "https://www.facebook.com/factAE-114400436596751",
+                  "https://twitter.com/factaeOfficial",
+                  "https://www.linkedin.com/company/factae"
+                ]
+              }`,
+            }}
+          ></script>
           <noscript>You need to enable JavaScript to run this blog.</noscript>
         </body>
       </Html>

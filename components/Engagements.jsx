@@ -22,8 +22,8 @@ function Engagements() {
         <IconSimple />
         <h3 className={classes.engagementTitle}>Un outil simple</h3>
         <div className={classes.engagementDesc}>
-          factAE se veut simple et intuitif, afin que n'importe quel micro-entrepreneur puisse tenir
-          sa comptabilité.
+          factAE se veut simple et intuitif, afin que n'importe quel micro-entrepreneur puisse gérer
+          sa facturation.
         </div>
       </div>
       <div className={classes.engagement}>

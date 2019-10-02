@@ -10,7 +10,7 @@ import Footer from '../components/Footer'
 
 const title = `factAE - L'outil de facturation au prix d'une baguette`
 const desc = `factAE est un outil de facturation dédié aux micro-entrepreneurs à 1€/mois.`
-const tags = `factae,outil,facture,comptable,comptabilité,devis,facturation,micro-entrepreneur,micro-entreprise,1€,clément,douin,soywod`
+const tags = `factae,outil,facture,facturation,comptable,comptabilité,devis,facturation,micro-entrepreneur,micro-entreprise,1€,clément,douin,soywod`
 
 function LandingPage() {
   return (

@@ -43,8 +43,8 @@ function Hero() {
         <p className={classes.about}>
           factAE est un outil de <strong>facturation</strong> dédié aux{' '}
           <strong>micro-entrepreneurs</strong> (anciennement auto-entrepreneurs). Son objectif est
-          simple : permettre à tout micro-entrepreneur de gérer facilement et efficacement sa
-          comptabilité pour <strong>1€/mois</strong>. Rien de plus.
+          simple : permettre à tout micro-entrepreneur de gérer <strong>facilement</strong> et
+          efficacement sa facturation pour <strong>1€/mois</strong>. Rien de plus.
         </p>
         <form className={classes.form} onSubmit={redirectToApp}>
           <label className={classes.label} htmlFor="hero-email">

@@ -10,10 +10,10 @@ function About() {
     <Container id="about" className={classes.container}>
       <h2 className={classes.title}>Pourquoi factAE ?</h2>
       <p className={classes.about}>
-        factAE est un outil d'aide à la facturation dédié aux <strong>micro-entrepreneurs</strong>{' '}
-        (anciennement auto-entrepreneurs). Son objectif est simple : permettre à tout
-        micro-entrepreneur de gérer facilement et efficacement sa comptabilité pour 1€ par mois.
-        Rien de plus.
+        factAE est un outil d'aide à la facturation dédié aux
+        <strong>micro-entrepreneurs</strong> (anciennement auto-entrepreneurs). Son objectif est
+        simple : permettre à tout micro-entrepreneur de gérer facilement et efficacement sa
+        facturation pour 1€ par mois. Rien de plus.
       </p>
       <img className={classes.avatar} src={avatar} alt="Clément DOUIN" />
       <h3 className={classes.subtitle}>
