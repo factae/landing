@@ -20,7 +20,7 @@ const features = [
   {
     image: featureB,
     title: 'Registre automatique',
-    content: `Tenir un livre des recettes est obligatoire. factAE le fait pour vous, en se basant sur vos documents. Vous avez également accès à un registre des achats si votre activité le requiert.`,
+    content: `Tenir un livre des recettes est obligatoire. factAE le fait pour vous, en se basant sur vos factures. Vous avez également accès à un registre des achats si votre activité le requiert.`,
   },
   {
     image: featureC,

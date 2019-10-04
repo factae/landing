@@ -18,8 +18,11 @@ function Navbar() {
         <Link className={classes.link} to="#features">
           Fonctionnalités
         </Link>
-        <Link className={classes.button} to={process.env.HOSTNAME_APP + '/auth'}>
+        <Link className={classes.greenButton} to={process.env.HOSTNAME_APP + '/auth'}>
           Créer un compte
+        </Link>
+        <Link className={classes.blueButton} to={process.env.HOSTNAME_APP + '/demo'}>
+          Démo →
         </Link>
       </nav>
     </Container>
