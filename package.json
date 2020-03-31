@@ -20,7 +20,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "luxon": "^1.16.0",
-    "next": "^8.1.0",
+    "next": "^9.3.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-ga": "^2.6.0",
